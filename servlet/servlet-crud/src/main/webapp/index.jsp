@@ -12,7 +12,7 @@
     <body>
 
         <div class="container">
-            <form>
+            <form action="">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Username</label>
                     <input type="text" class="form-control" id="exampleInputEmail1">
