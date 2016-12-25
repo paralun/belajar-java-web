@@ -50,7 +50,14 @@ public class ClubDaoImpl implements ClubDao {
 
     @Override
     public void delete(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try {
+            String sql = "delete from t_club where id = ?";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setInt(1, id);
+            statement.executeUpdate();
+        }catch(Exception ex) {
+            
+        }
     }
 
     @Override
